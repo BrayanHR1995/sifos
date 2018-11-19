@@ -18,9 +18,7 @@ class MunicipioTests(TestCase):
 
     def test_text_content(self):
         municipio = Municipio.objects.get(id=1)
-        print(municipio.nombre)
-        print(municipio.longitd)
-        print(municipio.latitud)
+
         
     def comp_text(self):
         a= 'Villavicencio'
@@ -40,13 +38,7 @@ class EspecieTests(TestCase):
 
     def test_text_content(self):
         especie = Especie.objects.get(id=1)
-        if(especie):      
-            print(especie.nombre)
-            print(especie.nombre_cientifico)
-            print(especie.porcentaje_oxigeno)
-            print(especie.porcentaje_carbono)
-        else:
-            print("No Existe")
+
             
 class RobotTests(TestCase):
 
@@ -57,15 +49,7 @@ class RobotTests(TestCase):
         else:
             print("No Exitoso")
 
-    def test_text_content(self):
-        robot = Robot.objects.get(id=1)
-        if(robot):      
-            print(robot.nombre)
-            print(robot.gps)
-            print(robot.modelo)
-            print(robot.estado)
-        else:
-            print("No Existe")
+
           
 class TipoPatronTests(TestCase):
 
@@ -76,13 +60,5 @@ class TipoPatronTests(TestCase):
         else:
             print("No Exitoso")
 
-    def test_text_content(self):
-        tipoPatron = TipoPatron.objects.get(id=1)
-        if(tipoPatron):      
-            print(tipoPatron.nombre)
-            print(tipoPatron.figura)
-            print(tipoPatron.distancia_interna)
-            
-        else:
-            print("No Existe")
+
 
